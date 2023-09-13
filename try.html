@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager <i class="fas fa-tasks"></i></h1>
+  <h3>Hey Jyoti, What's on your To-Do</h3>
+        <div id="clock"></div>
+</br>
+        <div class="controls">
+            <select id="filterCategory">
+                <option value="all">All</option>
+                <option value="business">Business</option>
+                <option value="personal">Personal</option>
+            </select>
+            <input type="text" id="search" placeholder="Search">
+            <button id="voiceSearch"><i class="fas fa-microphone"></i></button>
+            <button id="sortByDate">Sort by Date</button>
+        </div>
+        <ul id="todoList"></ul>
+        <div class="add-todo">
+            <input type="text" id="task" placeholder="Task">
+            <select id="category">
+                <option value="business">Business</option>
+                <option value="personal">Personal</option>
+            </select>
+            <input type="date" id="dueDate">
+            <button id="addTodo">Add Task</button>
+        </div>
+    </div>
+    <script src="try.js"></script>
+</body>
+</html>
